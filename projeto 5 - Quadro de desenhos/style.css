@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #dddddd;
+    margin-bottom: 10px;
+}
+
+#tela {
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 3px 3px 5px #000;
+    cursor: crosshair;
+}
+
+.colorArea {
+    margin-top: 15px;
+    width: 800px;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.color {
+    flex: 1;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.color.active {
+    border: 5px solid #FFF;
+}
+
+.clear {
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 12pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+/* comeco do footer */
+footer {
+    background-color: var(--cinza-forte);
+    border-top: solid 1px white;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
